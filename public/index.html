@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1">
+    <title>Title</title>
+    <script>
+      window.globals = {
+        serverUrl:"http://localhost:8000",
+        production:false,
+        env:'local',
+        defaultState:{},
+        timer:Date.now(),
+        domLoad:false
+      };
+      document.addEventListener("DOMContentLoaded", function(event) {
+        window.globals.domLoad = true;
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="vendors.js"></script>
+    <script src="main.js"></script>   
+    <link rel="stylesheet" href="bundle.min.css" />
+  </body>
+</html>
