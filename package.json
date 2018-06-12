@@ -1,7 +1,7 @@
 {
   "name": "react_component_library",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "scripts": {
     "start": "node server",
     "dev": "webpack-dev-server --hot --devtool eval-cheap-module-source-map --content-base public/ --output-path public/dist/",
@@ -41,7 +41,7 @@
     "webpack-dev-server": "^2.4.2"
   },
   "description": "Boilerplate for react redux router",
-  "main": "src/main.js",
+  "main": "src/lib/main.js",
   "author": "Ajith kumar VM",
   "license": "ISC"
 }
